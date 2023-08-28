@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TASKS } from '../../tasks';
 import {Task} from '../../Task'
 
@@ -9,4 +9,5 @@ import {Task} from '../../Task'
 })
 export class TaskComponent {
   tasks: Task[] = TASKS;
+  
 }
