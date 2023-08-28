@@ -8,5 +8,5 @@ import {Task} from '../../Task'
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent {
-  
+  tasks: Task[] = TASKS;
 }
