@@ -14,12 +14,16 @@ export class TaskService {
 
   private apiURL = "http://localhost:5000/tasks"
 
-
   constructor(private http:HttpClient) { }
+
   getTasks(): Observable<Task[]> {
-    // return TASKS;
-    // const tasks = of(TASKS);
-    // return tasks;
+    // return TASKS;// const tasks = of(TASKS);// return tasks;
     return this.http.get<Task[]>(this.apiURL)
+  }
+
+
+  deleteTask(task: Task): Observable<Task> {
+    const url: string = `${this.apiURL}/${task.id}`;
+    return this.http.delete<Task>(url)
   }
 }

@@ -1,88 +1,46 @@
 {
-  "tasks":  [
-  {
-    "id": 1,
-    "text": "Doctors Appointment",
-    "day": "May 5th at 2:30pm",
-    "reminder": true
-  },
-  {
-    "id": 2,
-    "text": "Grocery Shopping",
-    "day": "May 6th at 4:00pm",
-    "reminder": false
-  },
-  {
-    "id": 3,
-    "text": "Submit Report",
-    "day": "May 7th at 11:00am",
-    "reminder": true
-  },
-  {
-    "id": 4,
-    "text": "Meet with Client",
-    "day": "May 8th at 3:00pm",
-    "reminder": true
-  },
-  {
-    "id": 5,
-    "text": "Gym Workout",
-    "day": "May 9th at 9:00am",
-    "reminder": true
-  },
-  {
-    "id": 6,
-    "text": "Dinner Reservation",
-    "day": "May 10th at 7:00pm",
-    "reminder": false
-  },
-  {
-    "id": 7,
-    "text": "Read Chapter 5",
-    "day": "May 11th at 6:00pm",
-    "reminder": true
-  },
-  {
-    "id": 8,
-    "text": "Movie Night",
-    "day": "May 12th at 8:00pm",
-    "reminder": true
-  },
-  {
-    "id": 9,
-    "text": "Call Mom",
-    "day": "May 13th at 10:30am",
-    "reminder": true
-  },
-  {
-    "id": 10,
-    "text": "Prepare Presentation",
-    "day": "May 14th at 1:00pm",
-    "reminder": false
-  },
-  {
-    "id": 11,
-    "text": "Doctors Appointment",
-    "day": "May 5th at 2:30pm",
-    "reminder": true
-  },
-  {
-    "id": 12,
-    "text": "Grocery Shopping",
-    "day": "May 6th at 4:00pm",
-    "reminder": false
-  },
-  {
-    "id": 13,
-    "text": "Submit Report",
-    "day": "May 7th at 11:00am",
-    "reminder": true
-  },
-  {
-    "id": 14,
-    "text": "Meet with Client",
-    "day": "May 8th at 3:00pm",
-    "reminder": true
-  }
-]
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctors Appointment",
+      "day": "May 5th at 2:30pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Grocery Shopping",
+      "day": "May 6th at 4:00pm",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Submit Report",
+      "day": "May 7th at 11:00am",
+      "reminder": true
+    },
+    {
+      "id": 4,
+      "text": "Meet with Client",
+      "day": "May 8th at 3:00pm",
+      "reminder": true
+    },
+    {
+      "id": 5,
+      "text": "Gym Workout",
+      "day": "May 9th at 9:00am",
+      "reminder": true
+    },
+    {
+      "id": 6,
+      "text": "Dinner Reservation",
+      "day": "May 10th at 7:00pm",
+      "reminder": false
+    },
+    {
+      "id": 7,
+      "text": "Read Chapter 5",
+      "day": "May 11th at 6:00pm",
+      "reminder": true
+    }
+  ]
 }
