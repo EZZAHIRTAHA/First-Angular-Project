@@ -1,6 +1,19 @@
 
-    <div  class="max-w-sm p-6  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <h5 class="mb-2 text-xl font-bold  flex justify-between  tracking-tight text-gray-900 dark:text-white">{{ task.text }} <fa-icon (click)="onDelete(task)" class="ml-2 text-3xl cursor-pointer text-red-600" [icon]="faTimes"></fa-icon></h5>
+    <div 
+        [ngClass]="{reminder: task.reminder}"
+        class="max-w-sm p-6 bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700"
+        (dblclick)="onToggle(task)"
+    >
+        <h5 
+            class="mb-2 text-xl font-bold  flex justify-between  tracking-tight text-gray-900 dark:text-white">
+                {{ task.text }} 
+                <fa-icon 
+                    (click)="onDelete(task)" 
+                    class="ml-2 text-3xl cursor-pointer text-red-600" 
+                    [icon]="faTimes">
+
+                </fa-icon>
+        </h5>
     <div class="flex  flex-row justify-start gap-5 items-center">
         <img src="https://cdn-icons-png.flaticon.com/128/2370/2370264.png" class="w-5 mb-3" alt="">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ task.day }}</p>

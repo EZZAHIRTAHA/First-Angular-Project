@@ -3,7 +3,11 @@ import { Task } from '../Task';
 import { TASKS } from '../tasks';
 import { Observable, of } from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': "application/json"
+  })
+}
 
 
 
@@ -25,5 +29,11 @@ export class TaskService {
   deleteTask(task: Task): Observable<Task> {
     const url: string = `${this.apiURL}/${task.id}`;
     return this.http.delete<Task>(url)
+  }
+
+
+  updateTaskReminder(task: Task): Observable<Task> {
+    const url: any = `${this.apiURL}/${task.id}`
+    return this.http.put<Task>(url, task, httpOptions);
   }
 }
