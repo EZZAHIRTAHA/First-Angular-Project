@@ -1,8 +1,19 @@
-<form>
+<form class="m-5" (ngSubmit)="onSubmit()">
     <div class="mb-6 flex justify-center ">
       <!-- <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Task</label> -->
-      <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-950  block w-[50%] h-[4rem] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 indent-7  outline-none text-md dark:text-white  focus:border-blue-950 focus:border-[2px]" placeholder="Add Task" required>
+      <input type="text" name="text" [(ngModel)]="text" class="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-950  block w-[50%] h-[4rem] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 indent-7  outline-none text-md dark:text-white  focus:border-blue-950 focus:border-[2px]" placeholder="Add Task" required>
+ 
     </div>
-    <
+    <div class="mb-6 flex justify-center">
+        <input type="text" name="day" [(ngModel)]="day" class="pbg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-950  block w-[50%] h-[4rem] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 indent-7  outline-none text-md dark:text-white  focus:border-blue-950 focus:border-[2px]" placeholder="Add Day & Time" required>
+    </div>
+    
+        <div class="flex items-center justify-center flex-row gap-3">
+            <label class="font-semibold text-blue-950 text-md" for="reminder">Reminder</label>
+          <input id="reminder" type="checkbox" [(ngModel)]="reminder" name="reminder" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-950 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" >
+        </div>
+        <div class="flex justify-center mt-5">
+            <button type="submit" class="text-white flex justify-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-950 dark:hover:bg-blue-800 dark:focus:ring-blue-800">Save Task</button>
+        </div>
   </form>
   
