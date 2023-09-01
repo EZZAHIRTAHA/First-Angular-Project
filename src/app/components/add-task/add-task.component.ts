@@ -1,6 +1,8 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output,  } from '@angular/core';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { Subscription } from 'rxjs';
 import { Task } from 'src/app/Task';
+import { UiService } from 'src/app/services/ui.service';
 
 
 @Component({
@@ -11,11 +13,19 @@ import { Task } from 'src/app/Task';
 
 
 export class AddTaskComponent {
-  constructor() {  }
+  
+  
   text: string= "";
   day: string= "";
   reminder: boolean = false;
   faCalendar = faCalendar;
+  showAddTask: boolean = false;
+  subscription: Subscription;
+  
+  constructor(private uiService: UiService ) { 
+    this.subscription = this.uiService.onToggle().subscribe(value => this.showAddTask = value);
+    // this.uiService = UiService
+   }
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
   clearForm() {
