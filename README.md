@@ -1,4 +1,21 @@
-# FirstApp
+# Task Tracker 
+
+A simple task tracker built with Angular, TypeScript, JSON Server, and Tailwind CSS.
+
+## Technologies Used
+
+- Angular 16
+- TypeScript
+- JSON Server
+- Tailwind CSS and much more !
+
+## Features
+
+- Add tasks with descriptions and reminders.
+- Edit and delete tasks.
+- Toggle task reminders.
+- Responsive design.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
